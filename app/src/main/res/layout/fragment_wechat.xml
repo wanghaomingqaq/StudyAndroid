@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.wechatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slogo"/>
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/coin_num"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:gravity="right"
+                android:layout_height="30dp"
+                android:text="256" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/coin" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dio_num"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:gravity="right"
+                android:layout_height="30dp"
+                android:text="256" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/zuanshi" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="120dp"
+        app:cardCornerRadius="15dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rock"
+        />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/play_1"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/play"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/play_1_pause"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pause"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timecount_1"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="01:00:00"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="210dp"
+        app:cardCornerRadius="15dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/bg_3"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:id="@+id/play_2"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/play"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:id="@+id/play_2_pause"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:background="@drawable/pause"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timecount_center"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="00:30:00"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="300dp"
+        app:cardCornerRadius="15dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_2"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:id="@+id/play_3_play"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/play"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:id="@+id/play_3_pause"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pause"/>
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timecount3"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:text="00:00:00"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
